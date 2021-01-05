@@ -1,6 +1,6 @@
 let node;
 let junction;
-
+let img;
 
 function connectJunctionSuccess(connectedJunction) {
 	junction = connectedJunction;
@@ -16,18 +16,26 @@ function fail(errorMessage) {
 	print(errorMessage);
 }
 
+
+// function preload() {
+//   img = loadImage('images/words_buttons.jpg');
+// }
+
 function setup() {
   createCanvas(200, 800);
+	 background(0);
   OSCjunction.connect("node-1", connectNodeSuccess, fail);
-  background(0);
+
+	// image(img, 0, 0);
 }
 
 function draw() {
+
   if (mouseIsPressed) {
     //fill(0);
   //  ellipse(mouseX, mouseY, 20, 20);
     if(junction !== undefined && junction.connected) {
-      junction.send("/mouse", [0]);
+      junction.send("/mouse", [mouseX/width]);
 			console.log("send");
     }
   }
