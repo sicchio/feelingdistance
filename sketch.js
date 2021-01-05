@@ -9,7 +9,7 @@ function connectJunctionSuccess(connectedJunction) {
 
 function connectNodeSuccess(connectedNode) {
 	node = connectedNode;
-	node.connectJunctionSend("WebTest", "1111", connectJunctionSuccess);
+	node.connectJunctionSend("Kate_test", "2222", connectJunctionSuccess);
 }
 
 function fail(errorMessage) {
