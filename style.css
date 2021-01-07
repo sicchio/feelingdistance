@@ -9,7 +9,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background: #000000;
-	font-family: 'Abel', sans-serif;
+	font-family: "Courier New"
 	font-size: 14px;
 	color: #FFFFFF;
 }
@@ -17,7 +17,7 @@ body {
 h1, h2, h3 {
 	margin: 0;
 	padding: 0;
-	font-family: 'Abel', sans-serif;
+	font-family: "Courier New"
 	font-weight: normal;
 	color: #FFFFFF
 }
@@ -36,7 +36,7 @@ h3 {
 
 p, ul, ol {
 	margin-top: 0;
-	line-height: 240%;
+	line-height: 120%;
 }
 
 ul, ol {
@@ -44,7 +44,7 @@ ul, ol {
 
 a {
 	text-decoration: none;
-	color: #474747;
+	color: #FFFFFF;
 }
 
 a:hover {
@@ -70,6 +70,19 @@ a:hover {
   color: #FFFFFF
 }
 
+#about {
+	float: center;
+	font-family: "Courier New";
+	width: 600px;
+	margin: 0px auto;
+	padding: 30px 0px;
+  color: #FFFFFF
+}
+#about a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
 
 #left {
 	float: left;
@@ -87,7 +100,7 @@ a:hover {
 
 #buttons {
 
-	width: 800px;
+	width: 850px;
   margin: 0px auto;
 	padding: 0px 0px 0px 0px;
   color: #FFFFFF
@@ -96,75 +109,6 @@ a:hover {
 #buttons a:hover {
   color: #FFFFFF;
   text-decoration: underline;
-}
-
-/* Sidebar */
-
-#sidebar {
-	float: right;
-	width: 280px;
-	margin: 0px;
-	padding: 0px 0px 0px 0px;
-}
-
-#sidebar ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#sidebar li {
-	margin: 0;
-	padding: 0;
-}
-
-#sidebar li ul {
-	margin: 0px 0px;
-	padding-bottom: 50px;
-}
-
-#sidebar li li {
-	line-height: 35px;
-	border-bottom: 1px solid #CCCCCC;
-	background: url(images/img01.gif) no-repeat left 13px;
-	margin: 0px 30px;
-	font-size: 14px;
-	font-weight: normal;
-}
-
-#sidebar li li span {
-}
-
-#sidebar li li a {
-	padding: 0px 0px 0px 0px;
-}
-
-#sidebar h2 {
-	margin: 0px;
-	padding: 20px 0px 30px 0px;
-	padding-left: 30px;
-	letter-spacing: 1px;
-	text-align: left;
-	text-transform: uppercase;
-	font-size: 30px;
-	font-weight: normal;
-	color: #000000;
-}
-
-#sidebar p {
-	margin: 0 0px;
-	padding: 0px 30px 20px 30px;
-	text-align: justify;
-	font-size: 14px;
-}
-
-#sidebar a {
-	border: none;
-	color: #969493;
-}
-
-#sidebar a:hover {
-	text-decoration: underline;
 }
 
 
