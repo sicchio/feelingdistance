@@ -39,7 +39,7 @@
 <div id="buttons">
 
   <img src ="images/linger_bw.jpg" width="400" height="177" id ="getImage" onclick="imagefun()" value="Change Image"> 
-  <img src ="images/release_bw.jpg" width="400" height="177" >
+  <img src ="images/release_bw.jpg" width="400" height="177" id ="getImage2" onclick="imagefun2()" value="Change Image">
   
   </div>
   
@@ -51,6 +51,18 @@
             }
             else {
                 Image_Id.src = "images/linger_bw.jpg";
+            }
+        }        
+    </script>
+  
+    <script>
+  function imagefun2() {
+            var Image_Id = document.getElementById('getImage2');
+            if (Image_Id.src.match("images/release_bw.jpg")) {
+                Image_Id.src = "images/release_grey.jpg";
+            }
+            else {
+                Image_Id.src = "images/release_bw.jpg";
             }
         }        
     </script>
