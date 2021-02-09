@@ -35,6 +35,9 @@ h3 {
 }
 
 p, ul, ol {
+	font-family: "Courier New"
+	font-size: 14px;
+	color: #FFFFFF;
 	margin-top: 0;
 	line-height: 120%;
 }
@@ -103,8 +106,9 @@ a:hover {
 	width: 850px;
   margin: 0px auto;
 	padding: 0px 0px 0px 0px;
-  color: #FFFFFF
-	  font-family: "Courier New";
+ font-family: "Courier New";
+	font-size: 14px;
+	color: #FFFFFF;
 }
 
 #buttons a:hover {
