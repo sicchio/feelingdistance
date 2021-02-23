@@ -38,7 +38,7 @@
 
 <div id="buttons">
 
-  <img src ="images/linger_bw.jpg" width="400" height="177" id ="getImage" onmousedown="imagefun()" value="Change Image"> 
+  <img src ="images/linger_bw.jpg" width="400" height="177" id ="getImage" onmousedown="imagefun()" onmouseup="imagefun3()" value="Change Image"> 
   <img src ="images/release_bw.jpg" width="400" height="177" id ="getImage2" onmousedown="imagefun2()" value="Change Image">
   <p> Click "linger" to inflate the costume, allowing the dancer the feel your presence through air and touch. Click "release" to deflate the costume, leaving your presence behind. Click as many times as you would like throughout the performance.
   </p>
@@ -58,6 +58,18 @@
   
     <script>
   function imagefun2() {
+            var Image_Id = document.getElementById('getImage2');
+            if (Image_Id.src.match("images/release_bw.jpg")) {
+                Image_Id.src = "images/release_grey.jpg";
+            }
+            else {
+                Image_Id.src = "images/release_bw.jpg";
+            }
+        }        
+    </script>
+  
+  <script>
+  function imagefun3() {
             var Image_Id = document.getElementById('getImage2');
             if (Image_Id.src.match("images/release_bw.jpg")) {
                 Image_Id.src = "images/release_grey.jpg";
